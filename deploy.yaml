@@ -1,21 +1,21 @@
 apps:
-  script: ./option.js    # Èë¿ÚÎÄ¼þ
-  name: 'app'       # ³ÌÐòÃû³Æ
-  env:           # »·¾³±äÁ¿
+  script: ./option.js    # ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+  name: 'app'       # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  env:           # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
    COMMON_VARIABLE: true
   env_production:
    NODE_ENV: production
 
-deploy:           # ²¿Êð½Å±¾
- production:        # Éú²ú»·¾³
-  user: root      # ·þÎñÆ÷µÄÓÃ»§Ãû
-  host: 39.106.41.116   # ·þÎñÆ÷µÄipµØÖ·
-  port: 22        # ssh¶Ë¿Ú
-  ref: origin/master   # ÒªÀ­È¡µÄgit·ÖÖ§
-  ssh_options: StrictHostKeyChecking=no # SSH ¹«Ô¿¼ì²é
-  repo: https://github.com/guojiongwei/pm2-test.git # Ô¶³Ì²Ö¿âµØÖ·
-  path: /wuyou/src/pm2-test       # À­È¡µ½·þÎñÆ÷Ä³¸öÄ¿Â¼ÏÂ
-  pre-deploy: git fetch --all # ²¿ÊðÇ°Ö´ÐÐ
-  post-deploy: npm install && pm2 reload deploy.yaml --env production # ²¿ÊðºóÖ´ÐÐ
+deploy:           # ï¿½ï¿½ï¿½ï¿½Å±ï¿½
+ production:        # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  user: root      # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½
+  host: 39.106.41.116   # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ipï¿½ï¿½Ö·
+  port: 22        # sshï¿½Ë¿ï¿½
+  ref: origin/master   # Òªï¿½ï¿½È¡ï¿½ï¿½gitï¿½ï¿½Ö§
+  ssh_options: StrictHostKeyChecking=no # SSH ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½
+  repo: https://github.com/guojiongwei/pm2-test.git # Ô¶ï¿½Ì²Ö¿ï¿½ï¿½Ö·
+  path: /wuyou/src/pm2-test       # ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½Ä¿Â¼ï¿½ï¿½
+  pre-deploy: git fetch --all # ï¿½ï¿½ï¿½ï¿½Ç°Ö´ï¿½ï¿½
+  post-deploy: npm install && pm2 reload deploy.yaml --env production # ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½
   env:
    NODE_ENV: production
