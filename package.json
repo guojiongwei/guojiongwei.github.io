@@ -1,0 +1,17 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "option.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.3",
+    "connect-history-api-fallback": "^1.5.0",
+    "express": "^4.16.3",
+    "http-proxy-middleware": "^0.19.0"
+  }
+}

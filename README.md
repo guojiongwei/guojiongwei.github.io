@@ -1,2 +1,0 @@
-# yuming
-gitub域名
