@@ -17,6 +17,6 @@ app.use(history());
 app.use(compression())
 app.use(express.static(path.join(__dirname, '/admin')));//和上面是一样的
 // 监听端口
-app.listen(3000, '0.0.0.0', () => {
- console.log(`server running localhost:3000`);
+app.listen(4000, '0.0.0.0', () => {
+ console.log(`server running localhost:4000`);
 });
