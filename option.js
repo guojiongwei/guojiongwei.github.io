@@ -9,7 +9,7 @@ app.all('*', function(req, res, next) { // 解决跨域问题
   next();
 });
 app.use('/admin_demo_api', proxy({
-  target: 'http://guojiongwei.com/admin_demo_api',
+  target: 'https://guojiongwei.com/admin_demo_api',
   pathRewrite: {'^/admin_demo_api' : '/'},
   changeOrigin: true
 }))
